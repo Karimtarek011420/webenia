@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Corporate font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+  }
+  
+  /* Container and Section Styles */
+  .content-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .py-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa;
+  }
+  
+  .services .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings and Text */
+  .greeting {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .brand-name {
+    color: #007BFF;
+    font-weight: 700;
+  }
+  
+  .main-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #007BFF;
+  }
+  
+  .sub-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Service Cards */
+  .service-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .service-card .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .service-card .fa-regular,
+  .service-card .fa-solid {
+    font-size: 3rem;
+    color: #007BFF;
+    margin-bottom: 15px;
+  }
+  
+  .text-start {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #007BFF;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .text-start:hover {
+    color: #0056b3;
+  }
+  
+  /* Hover Effects for Cards */
+  .hover-card {
+    cursor: pointer;
+  }
+  
+  .bg-success-subtle {
+    background-color: #eafaf1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-heading {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .sub-heading {
+      font-size: 1.5rem;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  

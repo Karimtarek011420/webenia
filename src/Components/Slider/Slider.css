@@ -1,0 +1,102 @@
+/* Slider Container */
+.slider-section {
+  background-color: #f8f9fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Title Styling */
+.highlight-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+  animation: fadeInUp 1s ease-out;
+}
+
+.description-text {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* Responsive Slider Item */
+.slider-item {
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .highlight-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .highlight-title {
+    font-size: 1.5rem;
+  }
+
+  .description-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight-title {
+    font-size: 1.2rem;
+  }
+
+  .description-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

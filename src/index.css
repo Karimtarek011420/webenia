@@ -1,0 +1,12 @@
+.active {
+  border-bottom: 2px solid #00aaff;
+}
+@media screen and (max-width: 500px) {
+  .active {
+    border-bottom: 2px solid #00aaff;
+    width: fit-content;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif; /* Or your preferred font */
+}
