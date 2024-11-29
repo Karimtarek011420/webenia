@@ -14,7 +14,7 @@ import "animate.css";
 
 export default function SliderHome() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -65,15 +65,21 @@ export default function SliderHome() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-4">
-            <h2 className="highlight-title">Web. Mobile. Graphic. Marketing.</h2>
+            <h2 className="highlight-title">
+              Web. Mobile. Graphic. Marketing.
+            </h2>
             <p className="description-text mt-3">
-              Transforming businesses with cutting-edge web and mobile solutions, graphic design, and marketing strategies.
+              Transforming businesses with cutting-edge web and mobile
+              solutions, graphic design, and marketing strategies.
             </p>
           </div>
           <div className="offset-md-2 col-md-6">
             <Slider {...settings}>
               {slides.map((slide, index) => (
-                <div key={index} className="slider-item animate__animated animate__fadeIn">
+                <div
+                  key={index}
+                  className="slider-item animate__animated animate__fadeIn"
+                >
                   <div className="card shadow-sm">
                     <img
                       src={slide.img}

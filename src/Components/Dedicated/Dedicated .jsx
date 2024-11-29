@@ -6,8 +6,8 @@ import AOS from "aos";
 export default function Dedicated() {
   AOS.init({
     duration: 1000, // Animation duration
-    offset: 200,    // Offset before animation starts
-    once: true      // Whether animation runs only once
+    offset: 200, // Offset before animation starts
+    once: true, // Whether animation runs only once
   });
   return (
     <section className="dedicated container py-5">
@@ -67,14 +67,11 @@ export default function Dedicated() {
         </div>
 
         {/* Right Column */}
-        <div
-          className="col-md-6 content-right text-center"
-          data-aos="fade-left"
-        >
+        <div className=" col-md-6">
           <img
             src={company}
             alt="About Webenia Company"
-            className="img-fluid rounded shadow"
+            className=" w-100 rounded shadow"
           />
           <p className="description mt-3">
             Your company's IT systems are critical to its success. Our team
