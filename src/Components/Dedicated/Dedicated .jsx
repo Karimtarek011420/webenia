@@ -1,79 +1,88 @@
+import { useEffect } from "react";
 import "./dedicated.css";
 import company from "../../assets/images/about-company.jpg";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
 export default function Dedicated() {
-  AOS.init({
-    duration: 1000, // Animation duration
-    offset: 200, // Offset before animation starts
-    once: true, // Whether animation runs only once
-  });
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 200,
+      once: true,
+    });
+  }, []);
+
+  const features = [
+    {
+      icon: "fa-solid fa-users",
+      title: "A Dedicated Team of Experts",
+      description:
+        "Our rigorous qualification process ensures that we employ experienced and highly skilled professionals.",
+    },
+    {
+      icon: "fa-solid fa-clock",
+      title: "Completion of Projects on Time",
+      description:
+        "We meet tight deadlines without compromising quality, earning us trust from both government and private clients.",
+    },
+    {
+      icon: "fa-solid fa-chart-line",
+      title: "Streamlined Project Management",
+      description:
+        "We conduct thorough research on your business and target market to create a tailored plan of action.",
+    },
+  ];
+
   return (
     <section className="dedicated container py-5">
-      <div className="header-section text-center">
+      {/* Header Section */}
+      <div className="header-section text-center mb-5" data-aos="fade-up">
         <h3 className="title">Hire a Dedicated Developer</h3>
-        <button className="btn-primary">
+        <button
+          className="btn btn-primary hire-btn"
+          aria-label="Hire a Dedicated Developer"
+        >
           Hire Now <i className="fa-solid fa-arrow-right px-2"></i>
         </button>
       </div>
 
+      {/* Content Section */}
       <div className="row content py-5">
         {/* Left Column */}
         <div className="col-md-6 content-left" data-aos="fade-right">
           <p className="subtitle">Why Choose Us</p>
           <h4 className="heading">
-            Why WEBENIA Ranked Top Among The Leading Web & App Development
-            Companies
+            Why <span className="highlight">WEBENIA</span> Ranks Among Top Web &
+            App Development Companies
           </h4>
           <p className="description">
-            We believe in forming long-term, high-quality partnerships with our
-            clients.
+            We focus on forming long-term partnerships with our clients,
+            ensuring high-quality solutions for their business needs.
           </p>
 
-          {/* Features */}
-          <div className="feature-item d-flex">
-            <i className="fa-brands fa-slack icon"></i>
-            <div>
-              <h5 className="feature-title">A Dedicated Team of Experts</h5>
-              <p className="feature-description">
-                Our rigorous qualification process ensures that we employ
-                experienced and highly skilled professionals.
-              </p>
+          {/* Features List */}
+          {features.map((feature, index) => (
+            <div className="feature-item d-flex mb-4" key={index}>
+              <div className="icon-container">
+                <i className={`${feature.icon} icon`} aria-hidden="true"></i>
+              </div>
+              <div>
+                <h5 className="feature-title">{feature.title}</h5>
+                <p className="feature-description">{feature.description}</p>
+              </div>
             </div>
-          </div>
-
-          <div className="feature-item d-flex">
-            <i className="fa-brands fa-slack icon"></i>
-            <div>
-              <h5 className="feature-title">Completion of Projects on Time</h5>
-              <p className="feature-description">
-                We meet tight deadlines without compromising quality, earning us
-                trust from both government and private clients.
-              </p>
-            </div>
-          </div>
-
-          <div className="feature-item d-flex">
-            <i className="fa-regular fa-bell icon"></i>
-            <div>
-              <h5 className="feature-title">Streamlined Project Management</h5>
-              <p className="feature-description">
-                We conduct thorough research on your business and target market
-                to create a tailored plan of action.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
 
         {/* Right Column */}
-        <div className=" col-md-6">
+        <div className="col-md-6" data-aos="fade-left">
           <img
             src={company}
-            alt="About Webenia Company"
-            className=" w-100 rounded shadow"
+            alt="About Webenia - Our Dedicated Developer Team"
+            className="img-fluid rounded shadow"
           />
-          <p className="description mt-3">
+          <p className="description mt-4">
             Your company's IT systems are critical to its success. Our team
             provides top-notch solutions tailored to your business needs.
           </p>
@@ -85,7 +94,10 @@ export default function Dedicated() {
             Collaborate with us to turn your vision into reality. Click below to
             start your journey.
           </p>
-          <button className="btn-secondary">
+          <button
+            className="btn btn-secondary estimate-btn"
+            aria-label="Estimate Your Project"
+          >
             Estimate Your Project{" "}
             <i className="fa-solid fa-arrow-right px-2"></i>
           </button>

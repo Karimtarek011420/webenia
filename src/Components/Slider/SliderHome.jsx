@@ -88,7 +88,7 @@ export default function SliderHome() {
                       loading="lazy"
                     />
                     <div className="card-body">
-                      <h6 className="card-title text-center">{slide.title}</h6>
+                      <p className="card-title text-center">{slide.title}</p>
                     </div>
                   </div>
                 </div>

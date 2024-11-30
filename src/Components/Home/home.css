@@ -1,76 +1,44 @@
-/* General Styles */
-body {
-  font-family: "Roboto", sans-serif;
+/* Call to Action Styling */
+.cta-section {
+  background-color: #f8f9fa;
+  padding: 3rem 1rem;
 }
 
-h6 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-h2 {
+.cta-section h2 {
   font-size: 2.5rem;
 }
 
-.btn-primary {
-  background-color: #007bff;
-  border: none;
-  color: #fff;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+/* Newsletter Section Styling */
+.newsletter-section {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  border-top: 1px solid #e9ecef;
 }
 
-.btn-primary:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+.newsletter-section h2 {
+  font-size: 2rem;
 }
 
-/* Button Animation */
-.animate-btn {
-  animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Form Styles */
 .newsletter-input {
-  border: 2px solid #ced4da;
-  border-radius: 0.25rem;
-  padding: 0.5rem 1rem;
-  width: 100%;
-  max-width: 300px;
+  max-width: 400px;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .newsletter-input:focus {
-  outline: none;
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 1.8rem;
-  }
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
 
-  .sub {
-    flex-direction: column;
-  }
-
-  .newsletter-input {
-    margin-bottom: 0.5rem;
-  }
-
-  .btn-primary {
-    width: 100%;
-  }
+.btn:hover {
+  transform: translateY(-2px);
 }

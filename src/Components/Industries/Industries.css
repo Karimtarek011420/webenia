@@ -1,165 +1,74 @@
-/* Container Styling */
 .industries-container {
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f0f4f8, #ffffff);
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
 }
 
-/* Titles and Subtitle */
 .title-primary {
-  font-size: 1.8rem;
-  color: #0056d2;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #457b9d;
+  margin-bottom: 0.5rem;
 }
 
 .title-secondary {
-  font-size: 2.8rem;
-  color: #333;
-  margin: 0.5rem 0 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
+  color: #1d3557;
 }
 
 .subtitle {
   font-size: 1rem;
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.8;
+  color: #6c757d;
 }
 
-/* Grid Layout */
 .industries-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  padding: 0 2rem;
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-/* Industry Card Styling */
 .industry-card {
-  position: relative;
-  padding: 2rem;
-  border-radius: 15px;
-  background: #ffffff;
-  color: black;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #e9ecef, #ffffff);
+  border-radius: 10px;
+  padding: 1.5rem;
   text-align: center;
-  overflow: hidden;
-  z-index: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.industry-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  clip-path: circle(30% at 30% 20%);
-  transition: clip-path 0.4s ease;
-  z-index: -1;
+.industry-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.industry-card h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #343a40;
 }
 
 .industry-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-.industry-card:hover::before {
-  clip-path: circle(75%);
-}
-
-/* Dynamic Background Colors */
-.industry-bg-info {
-  background-color: #6f7475;
-}
-
-.industry-bg-warning {
-  background-color: #f8f9fa;
-}
-
-.industry-bg-success {
-  background-color: #f8f9fa;
-}
-
-.industry-bg-orange {
-  background-color: #f8f9fa;
-}
-
-.industry-bg-light {
-  background-color: #f8f9fa;
-  color: #333;
-}
-
-.industry-bg-danger {
-  background-color: #f8f9fa;
-}
-
-.industry-bg-purple {
-  background-color: #827f88;
-}
-
-.industry-bg-primary {
-  background-color: #73777c;
-}
-
-.industry-bg-cyan {
-  background-color: #f8f9fa;
-}
-
-.industry-bg-dark {
-  background-color: #343a40;
-}
-
-.industry-bg-muted {
-  background-color: #6c757d;
-}
-
-.industry-bg-secondary {
-  background-color: #6c757d;
-}
-
-/* Call-to-Action Section */
 .cta-text {
   font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 1rem;
+  color: #457b9d;
 }
 
 .cta-button {
-  background: linear-gradient(90deg, #007bff, #0056d2);
-  color:white;
+  background-color: #1d3557;
+  color: #fff;
   padding: 0.8rem 2rem;
   border: none;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 600;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background: linear-gradient(90deg, #0056d2, #003d99);
-  transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .title-secondary {
-    font-size: 2.2rem;
-  }
-
-  .cta-button {
-    width: 100%;
-  }
+  background-color: #457b9d;
 }
