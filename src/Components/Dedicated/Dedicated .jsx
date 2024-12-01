@@ -1,5 +1,6 @@
 import "./dedicated.css";
 import company from "../../assets/images/about-company.jpg";
+import { motion } from "framer-motion";
 
 export default function Dedicated() {
   const features = [
@@ -24,49 +25,73 @@ export default function Dedicated() {
   ];
 
   return (
-    <section className="dedicated py-5">
+    <motion.section
+      className="dedicated py-5"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="container">
-        {/* Header Section */}
         <div className="header-section text-center mb-5">
-          <h3 className="title">Hire a Dedicated Developer</h3>
-          <button className="btn btn-primary hire-btn">
+          <motion.h3
+            className="title"
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            Hire a Dedicated Developer
+          </motion.h3>
+          <motion.button
+            className="btn btn-primary hire-btn"
+            whileHover={{ scale: 1.1 }}
+          >
             Hire Now <i className="fa-solid fa-arrow-right px-2"></i>
-          </button>
+          </motion.button>
         </div>
 
         <div className="row gy-4 align-items-center">
-          {/* Left Column */}
           <div className="col-lg-6">
             <p className="subtitle">Why Choose Us</p>
-            <h4 className="heading">
+            <motion.h4
+              className="heading"
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+            >
               Why <span className="highlight">WEBENIA</span> Ranks Among Top Web
               & App Development Companies
-            </h4>
+            </motion.h4>
             <p className="description">
               We focus on forming long-term partnerships with our clients,
               ensuring high-quality solutions for their business needs.
             </p>
-
-            {/* Features List */}
             {features.map((feature, index) => (
-              <div className="feature-item d-flex mb-4" key={index}>
+              <motion.div
+                className="feature-item d-flex mb-4"
+                key={index}
+                initial={{ x: -30, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: index * 0.2 }}
+              >
                 <div className="icon-container">
                   <i className={`${feature.icon} icon`}></i>
                 </div>
                 <div>
-                  <h5 className="feature-title">{feature.title}</h5>
+                  <h5 className="feature-title mx-2">{feature.title}</h5>
                   <p className="feature-description">{feature.description}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
 
-          {/* Right Column */}
-          <div className="col-lg-6  ">
-            <img
+          <div className="col-lg-6">
+            <motion.img
               src={company}
               alt="About Webenia - Our Dedicated Developer Team"
               className="w-100 rounded shadow"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6 }}
             />
             <p className="description mt-4">
               Your company's IT systems are critical to its success. Our team
@@ -80,13 +105,16 @@ export default function Dedicated() {
               Collaborate with us to turn your vision into reality. Click below
               to start your journey.
             </p>
-            <button className="btn btn-secondary estimate-btn">
+            <motion.button
+              className="btn btn-secondary estimate-btn"
+              whileHover={{ scale: 1.1 }}
+            >
               Estimate Your Project{" "}
               <i className="fa-solid fa-arrow-right px-2"></i>
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

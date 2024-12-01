@@ -1,95 +1,26 @@
 .dedicated {
-  background-color: #f9f9f9; /* خلفية فاتحة وهادئة */
-  color: #333; /* لون النص */
+  background: #f9fafc;
+  color: #4a4a4a;
 }
 
-.header-section .title {
-  font-size: 2.5rem;
-  color: #0056b3; /* لون مميز */
-  font-weight: bold;
+.dedicated .highlight {
+  color: #007bff;
 }
 
-.hire-btn {
-  background-color: #0056b3;
-  color: #fff;
+.dedicated .btn-primary {
+  background-color: #5cb85c;
   border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
 }
 
-.hire-btn:hover {
-  background-color: #004494;
-}
-
-.heading {
-  font-size: 1.8rem;
-  color: #222;
-}
-
-.highlight {
-  color: #0056b3;
-}
-
-.subtitle {
-  font-size: 0.95rem;
-  color: #666;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+.dedicated .btn-secondary {
+  background-color: #337ab7;
+  color: white;
 }
 
 .feature-item {
-  align-items: center;
-  display: flex;
+  transition: transform 0.3s ease;
 }
 
-.icon-container {
-  font-size: 2.5rem;
-  color: #0056b3;
-  margin-right: 15px;
-}
-
-.feature-title {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.feature-description {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.estimate-btn {
-  background-color: #6c757d;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.estimate-btn:hover {
-  background-color: #5a6268;
-}
-
-img {
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .heading {
-    font-size: 1.5rem;
-  }
-
-  .hire-btn,
-  .estimate-btn {
-    font-size: 0.9rem;
-    padding: 8px 15px;
-  }
-
-  .feature-title {
-    font-size: 1rem;
-  }
+.feature-item:hover {
+  transform: scale(1.05);
 }
