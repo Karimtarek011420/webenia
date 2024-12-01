@@ -25,7 +25,7 @@ export default function Dedicated() {
 
   return (
     <section className="dedicated container py-5">
-      {/* Header Section */}
+     
       <div className="header-section text-center mb-5">
         <h3 className="title">Hire a Dedicated Developer</h3>
         <button className="btn btn-primary hire-btn">
@@ -33,10 +33,9 @@ export default function Dedicated() {
         </button>
       </div>
 
-      {/* Content Section */}
-      <div className="row g-5">
+      <div className="row gy-4">
         {/* Left Column */}
-        <div className="col-lg-6">
+        <div className="col-md-6">
           <p className="subtitle">Why Choose Us</p>
           <h4 className="heading">
             Why <span className="highlight">WEBENIA</span> Ranks Among Top Web &
@@ -62,7 +61,7 @@ export default function Dedicated() {
         </div>
 
         {/* Right Column */}
-        <div className="col-lg-6">
+        <div className="col-md-6">
           <img
             src={company}
             alt="About Webenia - Our Dedicated Developer Team"
