@@ -80,7 +80,7 @@ export default function Dedicated() {
           <img
             src={company}
             alt="About Webenia - Our Dedicated Developer Team"
-            className="img-fluid rounded shadow"
+            className=" w-100 rounded shadow"
           />
           <p className="description mt-4">
             Your company's IT systems are critical to its success. Our team
