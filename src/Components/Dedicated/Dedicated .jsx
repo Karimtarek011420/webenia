@@ -1,18 +1,7 @@
-import { useEffect } from "react";
 import "./dedicated.css";
 import company from "../../assets/images/about-company.jpg";
-import "aos/dist/aos.css";
-import AOS from "aos";
 
 export default function Dedicated() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      offset: 200,
-      once: true,
-    });
-  }, []);
-
   const features = [
     {
       icon: "fa-solid fa-users",
@@ -37,20 +26,17 @@ export default function Dedicated() {
   return (
     <section className="dedicated container py-5">
       {/* Header Section */}
-      <div className="header-section text-center mb-5" data-aos="fade-up">
+      <div className="header-section text-center mb-5">
         <h3 className="title">Hire a Dedicated Developer</h3>
-        <button
-          className="btn btn-primary hire-btn"
-          aria-label="Hire a Dedicated Developer"
-        >
+        <button className="btn btn-primary hire-btn">
           Hire Now <i className="fa-solid fa-arrow-right px-2"></i>
         </button>
       </div>
 
       {/* Content Section */}
-      <div className="row content py-5">
+      <div className="row g-5">
         {/* Left Column */}
-        <div className="col-md-6 content-left" data-aos="fade-right">
+        <div className="col-lg-6">
           <p className="subtitle">Why Choose Us</p>
           <h4 className="heading">
             Why <span className="highlight">WEBENIA</span> Ranks Among Top Web &
@@ -65,7 +51,7 @@ export default function Dedicated() {
           {features.map((feature, index) => (
             <div className="feature-item d-flex mb-4" key={index}>
               <div className="icon-container">
-                <i className={`${feature.icon} icon`} aria-hidden="true"></i>
+                <i className={`${feature.icon} icon`}></i>
               </div>
               <div>
                 <h5 className="feature-title">{feature.title}</h5>
@@ -76,11 +62,11 @@ export default function Dedicated() {
         </div>
 
         {/* Right Column */}
-        <div className="col-md-6" data-aos="fade-left">
+        <div className="col-lg-6">
           <img
             src={company}
             alt="About Webenia - Our Dedicated Developer Team"
-            className=" w-100 rounded shadow"
+            className="w-100 rounded shadow"
           />
           <p className="description mt-4">
             Your company's IT systems are critical to its success. Our team
@@ -94,10 +80,7 @@ export default function Dedicated() {
             Collaborate with us to turn your vision into reality. Click below to
             start your journey.
           </p>
-          <button
-            className="btn btn-secondary estimate-btn"
-            aria-label="Estimate Your Project"
-          >
+          <button className="btn btn-secondary estimate-btn">
             Estimate Your Project{" "}
             <i className="fa-solid fa-arrow-right px-2"></i>
           </button>
