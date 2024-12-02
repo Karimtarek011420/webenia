@@ -5,8 +5,8 @@
 }
 /* لمتصفح Firefox */
 html {
-  scrollbar-color: #00aaff #f1f1f1; /* لون الجزء المتحرك والخلفية */
-  scrollbar-width: thin; /* عرض الشريط: auto, thin, none */
+  scrollbar-color: #00aaff #f1f1f1; 
+  scrollbar-width: thin; 
 }
 
 .active {
@@ -19,5 +19,5 @@ html {
   }
 }
 body {
-  font-family: "Poppins", sans-serif; /* Or your preferred font */
+  font-family: "Poppins", sans-serif;
 }

@@ -1,11 +1,9 @@
-/* Slider Container */
 .slider-section {
   background-color: #f8f9fa;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-/* Title Styling */
 .highlight-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -22,7 +20,6 @@
   line-height: 1.6;
 }
 
-/* Responsive Slider Item */
 .slider-item {
   margin: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -33,7 +30,6 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Card Styling */
 .card {
   border: none;
   border-radius: 12px;
@@ -50,7 +46,6 @@
   transform: scale(1.1);
 }
 
-/* Card Body */
 .card-body {
   padding: 20px;
   text-align: center;
@@ -62,7 +57,6 @@
   color: #333;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .highlight-title {
     font-size: 2rem;
@@ -89,7 +83,6 @@
   }
 }
 
-/* Fade In Animation */
 @keyframes fadeInUp {
   0% {
     opacity: 0;

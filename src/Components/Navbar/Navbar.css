@@ -1,61 +1,59 @@
-/* Navbar.css */
 .custom-navbar {
-  background: linear-gradient(135deg, #2d3e50, #1a2533);
-
-  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar-scrolled {
-  background-color: #fff;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.nav-link {
-  position: relative;
-  color: #000;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #007bff;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: #007bff;
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-.navbar-brand img {
-  height: 50px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.navbar-brand img:hover {
-  transform: scale(1.1);
-}
-
-.nav-quote-btn {
-  border-radius: 20px;
-  transition: transform 0.3s ease;
-}
-
-.nav-quote-btn:hover {
-  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
   transition: transform 0.3s ease;
 }
 
-.navbar-logo:hover {
-  transform: rotate(5deg) scale(1.1);
+.navbar-brand:hover .navbar-logo {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.nav-quote-btn {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-quote-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
