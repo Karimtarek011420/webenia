@@ -1,53 +1,105 @@
-/* General Styling */
-.content-container {
+/* إعدادات عامة */
+body {
   font-family: "Arial", sans-serif;
-}
-
-.greeting {
-  font-size: 1.5rem;
-  color: #6c757d;
-}
-
-.brand-name {
-  color: #007bff;
-  font-weight: bold;
-}
-
-.main-heading {
-  font-size: 2.5rem;
-  color: #343a40;
-}
-
-.highlight {
-  color: #007bff;
-}
-
-.description {
-  color: #6c757d;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
 }
 
+/* ألوان وخطوط عامة */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --heading-font-size: 2.5rem;
+  --sub-heading-font-size: 2rem;
+  --paragraph-font-size: 1rem;
+}
+
+/* البطل (Hero Section) */
+.greeting {
+  color: var(--primary-color);
+  font-size: calc(1rem + 1vw);
+  font-weight: bold;
+}
+
+.brand-name {
+  color: var(--primary-color);
+  font-size: calc(1rem + 1vw);
+  font-weight: 500;
+}
+
+.main-heading {
+  font-size: calc(var(--heading-font-size) + 0.2vw);
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.description {
+  font-size: calc(var(--paragraph-font-size) + 0.3vw);
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
 .sub-heading {
-  font-size: 1.8rem;
-  color: #007bff;
-  margin-top: 2rem;
+  font-size: calc(var(--sub-heading-font-size) + 0.5vw);
+  color: var(--primary-color);
 }
 
-.services .service-card {
-  transition: transform 0.3s, box-shadow 0.3s;
+/* البطاقات (Service Cards) */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
 }
 
-.services .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+.service-card .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
 }
 
-.btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #004085;
+.service-card .btn:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 768px) {
+  :root {
+    --heading-font-size: 2rem;
+    --sub-heading-font-size: 1.5rem;
+    --paragraph-font-size: 0.9rem;
+  }
+
+  .main-heading {
+    font-size: calc(var(--heading-font-size) + 0.5vw);
+  }
+
+  .description {
+    font-size: calc(var(--paragraph-font-size) + 0.2vw);
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --heading-font-size: 1.8rem;
+    --sub-heading-font-size: 1.3rem;
+    --paragraph-font-size: 0.8rem;
+  }
+
+  .main-heading {
+    font-size: calc(var(--heading-font-size) + 0.3vw);
+  }
+
+  .description {
+    font-size: calc(var(--paragraph-font-size) + 0.1vw);
+  }
 }

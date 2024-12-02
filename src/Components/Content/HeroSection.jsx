@@ -1,13 +1,13 @@
 export default function HeroSection() {
   return (
     <div className="container py-5 text-center">
-      <h5 className="greeting">
+      <h6 className="greeting">
         Hello! We are <span className="brand-name">WEBENIA</span>
-      </h5>
-      <h2 className="main-heading">
+      </h6>
+      <h6 className="main-heading">
         <span className="highlight">Top-rated</span> Digital Marketing, Web, And
         Mobile App Development Company
-      </h2>
+      </h6>
       <p className="description">
         A leading full-service Web Solutions and Digital Marketing agency,
         providing services such as web development, SEO, UI/UX design, PPC
