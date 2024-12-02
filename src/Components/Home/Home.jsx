@@ -27,7 +27,6 @@ export default function Home() {
       <Dedicated />
       <Industries />
 
-      {/* Call to Action Section */}
       <div className="cta-section bg-light">
         <div className="container text-center py-2">
           <h6 className="text-primary fw-semibold">Let's work together</h6>
@@ -41,7 +40,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Newsletter Subscription Section */}
       <div className="newsletter-section bg-light">
         <div className="container py-1">
           <div className="row align-items-center">

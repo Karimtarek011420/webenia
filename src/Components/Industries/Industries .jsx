@@ -1,4 +1,4 @@
-import "./Industries.css"; // For custom styles
+import "./Industries.css"; 
 import { motion } from "framer-motion";
 
 export default function Industries() {

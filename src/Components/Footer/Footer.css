@@ -1,7 +1,6 @@
-/* General Footer Styling */
 .footer-container {
-  background-color: #222; /* خلفية داكنة */
-  color: #fff; /* نص أبيض */
+  background-color: #222; 
+  color: #fff; 
   font-family: Arial, sans-serif;
 }
 
@@ -90,14 +89,12 @@
   background-color: #0056b3;
 }
 
-/* Footer Bottom Styling */
 .footer-bottom {
   background-color: #111;
   color: #aaa;
   font-size: 0.85rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .brand-logo {
     font-size: 1.5rem;
